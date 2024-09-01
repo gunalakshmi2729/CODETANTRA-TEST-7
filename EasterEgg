@@ -1,0 +1,34 @@
+//File Name: q1319/EasterEgg.java
+//==================================
+package q1319;
+import java.util.Scanner;
+
+public class EasterEgg {
+    public static void main(String[] args) {
+     //write your code here
+     Scanner s=new Scanner(System.in);
+     System.out.print("Enter the Sentence : ");
+     String sentence=s.nextLine();
+     System.out.print("Enter a word to find: ");
+     String word=s.nextLine();
+     int index=sentence.indexOf(word);
+     if(index!=-1) {
+     	System.out.println("The word '" + word +"' is found at index " + index + " in the sentence.");
+     	
+     } else {
+     	System.out.println("The word '" + word + "' is not found in the sentence.");
+     }
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+    }
+}
+
