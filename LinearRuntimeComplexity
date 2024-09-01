@@ -1,0 +1,26 @@
+//File Name: Main.java
+//==================================
+import java.util.Scanner;
+public class Main {
+	public static void main(String args[]) {
+		Scanner s=new Scanner(System.in);
+		System.out.print("Enter the array elements separated by space: ");
+		String[] input=s.nextLine().split(" ");
+		int[] nums=new int[input.length];
+		for(int i=0;i<input.length;i++){
+			nums[i]=Integer.parseInt(input[i]);
+			
+		}
+		int sn=findsn(nums);
+		System.out.println("Single number: " + sn);
+		
+	}
+	public static int findsn(int[] nums) {
+		int result=0;
+		for(int num:nums) {
+			result^=num;
+		}
+		return result;
+	}
+}
+
