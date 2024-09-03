@@ -1,0 +1,38 @@
+//File Name: q1337/ExtractFirstParagraph.java
+
+package q1337;
+
+public class ExtractFirstParagraph {
+    public static void main(String[] args) {
+    	
+    // Get the input text from the command-line argument	
+    if(args.length==0) {
+    	System.out.println("No inout provided.");
+    	return;
+    }	
+    StringBuilder story=new StringBuilder();
+    for(String arg:args) {
+    	story.append(arg).append(" ");
+    	
+    }
+    String storyText=story.toString().trim();
+    int periodIndex=storyText.indexOf('.');
+    if(periodIndex !=-1) {
+    	System.out.println(storyText.substring(0,periodIndex + 1).trim());
+    	
+    } else {
+    	System.out.println("No period found. Unable to extract a summary.");
+    	
+    }
+    // Extract the first paragraph (from the beginning to the first period)	
+    	
+    	
+    	
+    	
+    	
+ 
+    	
+    }
+}
+
+
